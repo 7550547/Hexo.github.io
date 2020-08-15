@@ -28,7 +28,7 @@
 <meta property="og:description" content="案例">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-08T13:33:41.000Z">
-<meta property="article:modified_time" content="2020-08-10T00:29:14.521Z">
+<meta property="article:modified_time" content="2020-08-14T11:31:52.750Z">
 <meta property="article:author" content="郑天俊">
 <meta name="twitter:card" content="summary">
 
@@ -132,7 +132,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>归档<span class="badge">8</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>归档<span class="badge">9</span></a>
 
   </li>
         <li class="menu-item menu-item-schedule">
@@ -225,7 +225,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-10 08:29:14" itemprop="dateModified" datetime="2020-08-10T08:29:14+08:00">2020-08-10</time>
+                <time title="修改时间：2020-08-14 19:31:52" itemprop="dateModified" datetime="2020-08-14T19:31:52+08:00">2020-08-14</time>
               </span>
 
           
@@ -255,14 +255,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
             <div class="post-description">案例</div>
 
@@ -310,7 +310,10 @@
 <ul>
 <li>1、定义动物类（Animal)</li>
 <li>2、定义猫类（Cat），继承动物类</li>
-<li>3、定义狗类（Dog），继承动物类<br>A</li>
+<li>3、定义狗类（Dog），继承动物类<br>分别常见4个Java文件Animal、Cat、Dog、AnimalDemo<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">package test3.java;</span><br><span class="line"></span><br><span class="line">import java.lang.reflect.Constructor;</span><br><span class="line"></span><br><span class="line">public class Animal &#123;</span><br><span class="line">    private String name;</span><br><span class="line">    private int age;</span><br><span class="line"></span><br><span class="line">    public Animal()&#123;</span><br><span class="line">    &#125;</span><br><span class="line">    public Animal(String name, int age) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line">    public String getName() &#123;</span><br><span class="line">        return name;</span><br><span class="line">    &#125;</span><br><span class="line">    public void setName(String name) &#123;</span><br><span class="line">        this.name &#x3D; name;</span><br><span class="line">    &#125;</span><br><span class="line">    public int getAge() &#123;</span><br><span class="line">        return age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void setAge(int age) &#123;</span><br><span class="line">        this.age &#x3D; age;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">package test3.java;</span><br><span class="line"></span><br><span class="line">public class Cat extends Animal&#123;</span><br><span class="line">    public Cat()&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    public Cat(String name, int age) &#123;</span><br><span class="line">        super(name, age);</span><br><span class="line">    &#125;</span><br><span class="line">    public void catchMouse()&#123;</span><br><span class="line">        System.out.println(&quot;猫抓老鼠&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">package test3.java;</span><br><span class="line"></span><br><span class="line">public class Dog extends Animal&#123;</span><br><span class="line">    public Dog(String name, int age) &#123;</span><br><span class="line">        super(name, age);</span><br><span class="line">    &#125;</span><br><span class="line">    public void lookDoor()&#123;</span><br><span class="line">        System.out.println(&quot;狗看门&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">package test3.java;</span><br><span class="line">&#x2F;*</span><br><span class="line">* 测试类</span><br><span class="line">* *&#x2F;</span><br><span class="line">public class AnimalDemo &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        &#x2F;&#x2F;创建猫类对象进行测试</span><br><span class="line">        Cat c1 &#x3D; new Cat();</span><br><span class="line">        c1.setName(&quot;加菲猫&quot;);</span><br><span class="line">        c1.setAge(5);</span><br><span class="line">        System.out.println(c1.getName()+&quot;,&quot;+c1.getAge());</span><br><span class="line">        c1.catchMouse();</span><br><span class="line"></span><br><span class="line">        Cat c2&#x3D;new Cat(&quot;加菲猫&quot;,5);</span><br><span class="line">        System.out.println(c2.getName()+&quot;,&quot;+c2.getAge());</span><br><span class="line">        c2.catchMouse();</span><br><span class="line"></span><br><span class="line">        Dog c3 &#x3D; new Dog(&quot;馒头&quot;,5);</span><br><span class="line">        System.out.println(c3.getName()+&quot;,&quot;+c3.getAge());</span><br><span class="line">        c3.lookDoor();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 
     </div>
@@ -354,7 +357,10 @@
     <a href="/2020/08/06/java%E7%AC%94%E8%AE%B0/" rel="prev" title="java笔记">
       <i class="fa fa-chevron-left"></i> java笔记
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/08/14/java%E7%AC%94%E8%AE%B08-14/" rel="next" title="java笔记8.14">
+      java笔记8.14 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -427,7 +433,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/categories/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -487,18 +493,18 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">6k</span>
+    <span title="站点总字数">8k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">6 分钟</span>
+    <span title="站点阅读时长">8 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 <img src="https://static.dy208.cn/o_1dfilp8ruo521thr1hvf18ji17soa.png">
-           <a href="http://www.beian.miit.gov.cn/"  style="color:#f72b07" target="_blank">赣ICP备20009719号</a>
+<a href="http://www.beian.miit.gov.cn/"  style="color:#f72b07" target="_blank">赣ICP备20009719号</a>
  <div>
 <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
 <script>
