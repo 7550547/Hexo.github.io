@@ -74,16 +74,13 @@
     <link href="https://7550547.github.io./2020/08/14/java%E7%AC%94%E8%AE%B08-14/"/>
     <id>https://7550547.github.io./2020/08/14/java%E7%AC%94%E8%AE%B08-14/</id>
     <published>2020-08-14T11:34:48.000Z</published>
-    <updated>2020-08-15T02:25:43.474Z</updated>
+    <updated>2020-09-18T08:25:04.939Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1、导包"><a href="#1、导包" class="headerlink" title="1、导包"></a>1、导包</h2><h3 id="1、导包的概述与使用"><a href="#1、导包的概述与使用" class="headerlink" title="1、导包的概述与使用"></a>1、导包的概述与使用</h3><p>使用不同包下的类时，使用的时候要写全类的全路径，写起来太麻烦了，为了简化带包的操作，Java就提供了导包的功能。</p><h3 id="2、导包的格式"><a href="#2、导包的格式" class="headerlink" title="2、导包的格式"></a>2、导包的格式</h3><ul><li>格式：import包名；</li><li>范例：import java.util.Scanner;</li></ul><h2 id="2、修饰符"><a href="#2、修饰符" class="headerlink" title="2、修饰符"></a>2、修饰符</h2><h3 id="1、修饰符的分类"><a href="#1、修饰符的分类" class="headerlink" title="1、修饰符的分类"></a>1、修饰符的分类</h3><ul><li>权限修饰符</li><li>状态修饰符</li></ul><h2 id="3、权限修饰符"><a href="#3、权限修饰符" class="headerlink" title="3、权限修饰符"></a>3、权限修饰符</h2><table><thead><tr><th>修饰符</th><th>同一个类中</th><th>同一个包中子类无关类</th><th>不同包的子类</th><th>不同包的无关类</th></tr></thead><tbody><tr><td>private</td><td>√</td><td></td><td></td><td></td></tr><tr><td>默认</td><td>√</td><td>√</td><td></td><td></td></tr><tr><td>protected</td><td>√</td><td>√</td><td>√</td><td></td></tr><tr><td>public</td><td>√</td><td>√</td><td>√</td><td>√</td></tr></tbody></table><h2 id="4、状态修饰符"><a href="#4、状态修饰符" class="headerlink" title="4、状态修饰符"></a>4、状态修饰符</h2><h3 id="1、final"><a href="#1、final" class="headerlink" title="1、final"></a>1、final</h3><p>final修饰符是最后的意思，可以修饰成员方法，成员变量，类</p><blockquote><p> final修饰的特点</p></blockquote><ul><li>修饰方法：表明该方法是最终方法不能被重写</li><li>修饰变量：表明该变量是常量，不能在被赋值</li><li>修饰类：表明类是最终类不能在被继承<h3 id="2、final修饰局部变量"><a href="#2、final修饰局部变量" class="headerlink" title="2、final修饰局部变量"></a>2、final修饰局部变量</h3></li><li>变量是基本类型：final修饰指的是基本类型的数据值不能发生改变</li><li>变量引用类型：final修饰指的是引用类型的地址值不能发生改变，但是地址里面的内容可以发生改变</li></ul><h3 id="3、static修饰符"><a href="#3、static修饰符" class="headerlink" title="3、static修饰符"></a>3、static修饰符</h3><p>static是静态的意思，可以修饰成员方法、成员变量</p><blockquote><p>static修饰的特点</p></blockquote><ul><li>被类的所有对象共享<br>  ，这也是我们判断是否使用静态关键字的条件</li><li>可以通过类名调用<br>也可以通过对象名调用，推荐使用类名调用</li></ul><h3 id="4、static的访问特点"><a href="#4、static的访问特点" class="headerlink" title="4、static的访问特点"></a>4、static的访问特点</h3><blockquote><p>非静态的成员方法</p></blockquote><ul><li>能访问静态的成员方法</li><li>能访问非静态的成员方法</li><li>能访问静态的成员方法</li><li>能访问非静态的成员变量</li></ul><blockquote><p>静态的成员方法</p></blockquote><ul><li>能访问静态的成员方法</li><li>能访问静态的成员方法</li></ul><p><strong>总结成一句话就是：静态成员方法只能访问静态成法</strong></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;1、导包&quot;&gt;&lt;a href=&quot;#1、导包&quot; class=&quot;headerlink&quot; title=&quot;1、导包&quot;&gt;&lt;/a&gt;1、导包&lt;/h2&gt;&lt;h3 id=&quot;1、导包的概述与使用&quot;&gt;&lt;a href=&quot;#1、导包的概述与使用&quot; class=&quot;headerlink&quot; titl
-      
+      8.14 笔记
     
     </summary>
     
