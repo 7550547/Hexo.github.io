@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://7550547.github.io./"/>
-  <updated>2020-09-17T10:24:04.347Z</updated>
+  <updated>2020-10-11T02:50:57.968Z</updated>
   <id>https://7550547.github.io./</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>攻防世界web简单题</title>
+    <link href="https://7550547.github.io./2020/10/10/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8Cweb%E7%AE%80%E5%8D%95%E9%A2%98/"/>
+    <id>https://7550547.github.io./2020/10/10/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8Cweb%E7%AE%80%E5%8D%95%E9%A2%98/</id>
+    <published>2020-10-10T08:50:03.000Z</published>
+    <updated>2020-10-11T02:50:57.968Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>今天是刷GTF的第一天，题目类型是web新手篇，虽说每道题都是看的解析，还是决定记录下来，用自己的方式写下来，</strong></p><h2 id="第一题"><a href="#第一题" class="headerlink" title="第一题"></a>第一题</h2><p><img src="https://s1.ax1x.com/2020/10/10/0yyeVx.png" alt=""></p><ul><li>点击进入图片场景<br><img src="https://s1.ax1x.com/2020/10/10/0y6R0I.png" alt=""></li><li>题目让我们查看一个网页的源代码，但鼠标的右键不管用了。我们可以按下F12进入开发者模式，但不知道我的电脑F12是触摸板锁，或者Ctrl+U也是可以的。<br><img src="https://s1.ax1x.com/2020/10/10/0yWVqH.png" alt=""></li><li>这个时候就能看见网页源代码了。<br>所应就可以得到了flag，flag值为： cyberpeace{147549<strong><strong>***</strong></strong>}</li></ul><h2 id="第二题-get-post"><a href="#第二题-get-post" class="headerlink" title="第二题 get_post"></a>第二题 get_post</h2><p>get post是HTTP的2个常用请求<br><img src="https://s1.ax1x.com/2020/10/10/0yRrVA.png" alt=""></p><p>点击进入图片场景</p><p><img src="https://s1.ax1x.com/2020/10/10/0yRT5q.png" alt=""></p><ul><li><p>首先是用get方式提交一个a=1的变量<br>get的请求方式是通过在网址后面加上？和需要提交的参数<br>例如本题<a href="http://220.249.52.133:30301/？a=1" target="_blank" rel="noopener">http://220.249.52.133:30301/？a=1</a><br><img src="https://s1.ax1x.com/2020/10/10/0yhlDg.png" alt=""></p></li><li><p>get请求虽然不知道为什么要这样，但还是比较简单的。<br>post方式提交的话，我们要用到hackbar这个插件。<br>为此我下了个火狐<br><img src="https://s1.ax1x.com/2020/10/10/0yhzZQ.png" alt=""><br><img src="https://s1.ax1x.com/2020/10/10/0y5C0e.png" alt=""></p></li><li><p>把网站输入到上门点一下Execute执行就可以了<br>得到flag=cyberpeace{3ae2caacdeced76912079734204c632f}</p></li></ul><h2 id="第三题-robots"><a href="#第三题-robots" class="headerlink" title="第三题 robots"></a>第三题 robots</h2><p><img src="https://s1.ax1x.com/2020/10/10/0y5jEQ.png" alt=""></p><blockquote><p>robots是网站跟爬虫间的协议，用简单直接的txt格式文本方式告诉对应的爬虫被允许的权限，也就是说robots.txt是搜索引擎中访问网站的时候要查看的第一个文件。当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是否存在robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口令保护的页面。</p></blockquote><ul><li>让我们查看一下robots.txt里面有什么<br><img src="https://s1.ax1x.com/2020/10/10/0yoCid.png" alt=""></li><li>访问<a href="http://111.198.29.45:33982/f1ag_1s_h3re.php得到flag，如图所示" target="_blank" rel="noopener">http://111.198.29.45:33982/f1ag_1s_h3re.php得到flag，如图所示</a><br><img src="https://s1.ax1x.com/2020/10/11/06jorj.png" alt=""></li></ul><h2 id="第4题-backup"><a href="#第4题-backup" class="headerlink" title="第4题 backup"></a>第4题 backup</h2><blockquote><p>常见的备份文件后缀名有: .git .svn .swp .svn .~ .bak .bash_history</p></blockquote><p><img src="https://s1.ax1x.com/2020/10/11/06v1FP.png" alt=""></p><ul><li>首先打开题目场景<br><img src="https://s1.ax1x.com/2020/10/11/06vaes.png" alt=""></li><li>常见的备份文件后缀名为.bak<br><img src="https://s1.ax1x.com/2020/10/11/06vySU.png" alt=""></li><li>打开index.php.bar便可以看的flag了<br><img src="https://s1.ax1x.com/2020/10/11/06xC6g.png" alt=""></li></ul><h2 id="第5题-cookie"><a href="#第5题-cookie" class="headerlink" title="第5题 cookie"></a>第5题 cookie</h2><p><img src="https://s1.ax1x.com/2020/10/11/0cpVAA.png" alt=""></p><blockquote><p>Cookie是当主机访问Web服务器时，由 Web 服务器创建的，将信息存储在用户计算机上的文件。一般网络用户习惯用其复数形式 Cookies，指某些网站为了辨别用户身份、进行 Session 跟踪而存储在用户本地终端上的数据，而这些数据通常会经过加密处理。</p></blockquote><ul><li><p>打开题目场景可以看的<br><img src="https://s1.ax1x.com/2020/10/11/0cpU3V.png" alt=""></p></li><li><p>访问cookie.php,提示看响应头，即可发现flag<br><img src="https://s1.ax1x.com/2020/10/11/0cpRgK.png" alt=""></p></li></ul><h2 id="第6题-diaable-button"><a href="#第6题-diaable-button" class="headerlink" title="第6题 diaable_button"></a>第6题 diaable_button</h2><blockquote><p>我们只要把disabled属性改成able属性，按钮就可以点击了，flag就自然出现了</p></blockquote><p><img src="https://s1.ax1x.com/2020/10/11/0ciZqS.png" alt=""></p><ul><li>打开效果<br><img src="https://s1.ax1x.com/2020/10/11/0c9HZ4.png" alt=""></li><li>进入开发者模式,disabled 属性规定a为禁用 input 元素。</li><li>被禁用的 input 元素既不可用，也不可点击。可以设置 disabled 属性，直到满足某些其他的条件为止（比如选择了一个复选框等等）。然后，就需要通过 JavaScript 来删除 disabled 值，将 input 元素的值切换为可用。<br><img src="https://s1.ax1x.com/2020/10/11/0cPq81.png" alt=""></li><li>找到disabled的位置<br>删掉” disable=”” “后便可点击按钮，点击后效果如下<br><img src="https://s1.ax1x.com/2020/10/11/0ciPPA.png" alt=""></li></ul><h2 id="第7题-weak-auth"><a href="#第7题-weak-auth" class="headerlink" title="第7题 weak_auth"></a>第7题 weak_auth</h2><p><img src="https://s1.ax1x.com/2020/10/11/0cAF2R.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;今天是刷GTF的第一天，题目类型是web新手篇，虽说每道题都是看的解析，还是决定记录下来，用自己的方式写下来，&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;第一题&quot;&gt;&lt;a href=&quot;#第一题&quot; class=&quot;headerlink&quot; title=&quot;第一题&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Java笔记9.6</title>
